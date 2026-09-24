@@ -1,0 +1,40 @@
+---
+title: "Naqiao's Cloud Lab"
+jupyter: python3
+---
+
+# Hi, I'm Naqiao
+
+I'm a Business Analytics student at Boston University.
+
+This site is for my AD688 course work. I'm using it to keep track of what I actually set up and test during the semester, including AWS EC2, Python, PySpark, Quarto, and GitHub.
+
+I'm still getting used to the technical side of cloud analytics, so this site is basically a record of me building things step by step and making sure they actually work.
+
+## My First Spark Test
+
+I set up PySpark on my AWS EC2 instance and used this small example to make sure the environment was working correctly.
+
+```{python}
+from pyspark.sql import SparkSession
+
+spark = (
+    SparkSession.builder
+    .master("local[2]")
+    .appName("Naqiao AD688")
+    .getOrCreate()
+)
+
+tools = [
+    ("Python", "3.12"),
+    ("PySpark", "4.0.4"),
+    ("Quarto", "1.10")
+]
+
+df = spark.createDataFrame(tools, ["Tool", "Version"])
+df.show()
+
+spark.stop()
+```
+
+It is a simple test, but it confirms that Python and Spark can run correctly on my EC2 environment.
