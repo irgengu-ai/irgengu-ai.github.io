@@ -1,23 +1,93 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
     "section": "",
-    "text": "About Me\nI’m Naqiao Gu, a graduate student in Applied Business Analytics at Boston University.\nMy background is more business-focused than programming-focused, so one of my goals in AD688 is to understand how cloud tools and big data systems are actually used in business analytics.\nFor this course, I’m working with AWS EC2, Python, PySpark, GitHub, and Quarto. I prefer learning by setting things up myself, testing them, and fixing problems when something does not work.\nOutside class, I’m especially interested in business analysis, operations, and data-driven decision making."
+    "text": "My CV\nI’m finishing my master’s degree in Applied Business Analytics at Boston University. I’m interested in entry-level roles in operations, business analysis, and business intelligence.\nMy previous experience includes work with reporting, inventory, and team coordination. I’ve also used Excel, SQL, Python, Power BI, and PySpark in work or class projects.\nDownload my CV (PDF)\nI left my phone number off this public version. Feel free to contact me by email instead."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Naqiao’s Cloud Lab",
+    "title": "Home",
     "section": "",
-    "text": "I’m a Business Analytics student at Boston University.\nThis site is for my AD688 course work. I’m using it to keep track of what I actually set up and test during the semester, including AWS EC2, Python, PySpark, Quarto, and GitHub.\nI’m still getting used to the technical side of cloud analytics, so this site is basically a record of me building things step by step and making sure they actually work.\n\n\nI set up PySpark on my AWS EC2 instance and used this small example to make sure the environment was working correctly.\n\nfrom pyspark.sql import SparkSession\n\nspark = (\n    SparkSession.builder\n    .master(\"local[2]\")\n    .appName(\"Naqiao AD688\")\n    .getOrCreate()\n)\n\ntools = [\n    (\"Python\", \"3.12\"),\n    (\"PySpark\", \"4.0.4\"),\n    (\"Quarto\", \"1.10\")\n]\n\ndf = spark.createDataFrame(tools, [\"Tool\", \"Version\"])\ndf.show()\n\nspark.stop()\n\nWARNING: Using incubator modules: jdk.incubator.vector\nUsing Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n26/09/24 17:49:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n\n[Stage 0:&gt;                                                          (0 + 1) / 1]\n\n                                                                                \n\n\n+-------+-------+\n|   Tool|Version|\n+-------+-------+\n| Python|   3.12|\n|PySpark|  4.0.4|\n| Quarto|   1.10|\n+-------+-------+\n\n\n\nIt is a simple test, but it confirms that Python and Spark can run correctly on my EC2 environment."
+    "text": "I’m studying Applied Business Analytics at Boston University. I like working with data, but I’m more interested in how people use it to solve business problems.\nI made this website for my AD688 class. It is a place to share what I’ve learned about AWS, Spark, SQL, and a few projects from this semester.\nMy projects Download my CV"
   },
   {
-    "objectID": "index.html#my-first-spark-test",
-    "href": "index.html#my-first-spark-test",
-    "title": "Naqiao’s Cloud Lab",
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "Home",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\n\nProjects\nSome class projects I’ve worked on, including job data analysis and salary prediction.\nSee my work\n\n\nAbout me\nA little about my background, the tools I’m learning, and what I want to do after graduation.\nRead more"
+  },
+  {
+    "objectID": "index.html#a-quick-note",
+    "href": "index.html#a-quick-note",
+    "title": "Home",
+    "section": "A quick note",
+    "text": "A quick note\nI’m still learning the technical side of cloud analytics. A lot of this class was about trying things, running into problems, and figuring out how to fix them. I wanted the website to show that process without making it sound more complicated than it was."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "I set up PySpark on my AWS EC2 instance and used this small example to make sure the environment was working correctly.\n\nfrom pyspark.sql import SparkSession\n\nspark = (\n    SparkSession.builder\n    .master(\"local[2]\")\n    .appName(\"Naqiao AD688\")\n    .getOrCreate()\n)\n\ntools = [\n    (\"Python\", \"3.12\"),\n    (\"PySpark\", \"4.0.4\"),\n    (\"Quarto\", \"1.10\")\n]\n\ndf = spark.createDataFrame(tools, [\"Tool\", \"Version\"])\ndf.show()\n\nspark.stop()\n\nWARNING: Using incubator modules: jdk.incubator.vector\nUsing Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n26/09/24 17:49:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n\n[Stage 0:&gt;                                                          (0 + 1) / 1]\n\n                                                                                \n\n\n+-------+-------+\n|   Tool|Version|\n+-------+-------+\n| Python|   3.12|\n|PySpark|  4.0.4|\n| Quarto|   1.10|\n+-------+-------+\n\n\n\nIt is a simple test, but it confirms that Python and Spark can run correctly on my EC2 environment."
+    "text": "Contact\nThanks for visiting my website! I’m always happy to connect with people who are interested in business analytics, operations, or similar work.\nEmail: gnq0918@bu.edu\nGitHub: irgengu-ai\nLinkedIn: Naqiao Gu"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi, I’m Naqiao Gu. I’m a graduate student in Applied Business Analytics at Boston University, and I expect to finish my degree in January 2027.\nMy background is in business. I’ve worked with inventory, orders, and reporting, so I like projects that connect data to everyday operations. I enjoy understanding what’s going on and finding a practical way to improve it.\n\n\nIn AD688, I have been using Python, SQL, PySpark, AWS EC2, and GitHub. Some of these tools were new to me when I started. I learn best by actually using them instead of only reading about them.\n\n\n\nI’m interested in business operations, logistics, and business intelligence. I like working with people and using data to support better decisions. Outside class, I enjoy basketball and collecting model toys.\nSee my projects"
+  },
+  {
+    "objectID": "about.html#what-im-learning",
+    "href": "about.html#what-im-learning",
+    "title": "About Me",
+    "section": "",
+    "text": "In AD688, I have been using Python, SQL, PySpark, AWS EC2, and GitHub. Some of these tools were new to me when I started. I learn best by actually using them instead of only reading about them."
+  },
+  {
+    "objectID": "about.html#what-interests-me",
+    "href": "about.html#what-interests-me",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m interested in business operations, logistics, and business intelligence. I like working with people and using data to support better decisions. Outside class, I enjoy basketball and collecting model toys.\nSee my projects"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "These are a few things I worked on in my AD688 class. I’m keeping the explanations simple and focusing on what I actually did.\n\n\nI used PySpark to work with job posting data and tried three models to predict salaries: linear regression, polynomial regression, and random forest.\nI started with more than 800,000 job records. After cleaning the salary data, I used a sample to train and test the models. Random forest had the lowest test error, but the results also showed that predicting salaries is not easy with just a few features.\n\n\n\nR-squared results for three salary prediction models. All three models had limited predictive power.\n\n\nView the Module 5 GitHub repository\n\n\n\nI worked with job posting data stored in Parquet files. I used PySpark to load the data, check the columns, and explore what the dataset could tell me. This helped me get more comfortable working with data that was too large to inspect manually.\nView the Module 3 GitHub repository\n\n\n\nI used SQL to answer questions from structured data. I practiced writing queries and organizing the results so they were easier to understand. It was a useful way to connect what I learned in class with business questions.\n\n\n\nAt the beginning of the semester, I set up an EC2 instance and connected to it from my computer. I also worked with VS Code, GitHub, and Quarto. The setup took some trial and error, but it helped me run my later assignments on AWS."
+  },
+  {
+    "objectID": "projects.html#salary-prediction-with-spark-module-5",
+    "href": "projects.html#salary-prediction-with-spark-module-5",
+    "title": "Projects",
+    "section": "",
+    "text": "I used PySpark to work with job posting data and tried three models to predict salaries: linear regression, polynomial regression, and random forest.\nI started with more than 800,000 job records. After cleaning the salary data, I used a sample to train and test the models. Random forest had the lowest test error, but the results also showed that predicting salaries is not easy with just a few features.\n\n\n\nR-squared results for three salary prediction models. All three models had limited predictive power.\n\n\nView the Module 5 GitHub repository"
+  },
+  {
+    "objectID": "projects.html#working-with-job-data-in-spark-module-3",
+    "href": "projects.html#working-with-job-data-in-spark-module-3",
+    "title": "Projects",
+    "section": "",
+    "text": "I worked with job posting data stored in Parquet files. I used PySpark to load the data, check the columns, and explore what the dataset could tell me. This helped me get more comfortable working with data that was too large to inspect manually.\nView the Module 3 GitHub repository"
+  },
+  {
+    "objectID": "projects.html#sql-practice-module-2",
+    "href": "projects.html#sql-practice-module-2",
+    "title": "Projects",
+    "section": "",
+    "text": "I used SQL to answer questions from structured data. I practiced writing queries and organizing the results so they were easier to understand. It was a useful way to connect what I learned in class with business questions."
+  },
+  {
+    "objectID": "projects.html#setting-up-aws-ec2-module-1",
+    "href": "projects.html#setting-up-aws-ec2-module-1",
+    "title": "Projects",
+    "section": "",
+    "text": "At the beginning of the semester, I set up an EC2 instance and connected to it from my computer. I also worked with VS Code, GitHub, and Quarto. The setup took some trial and error, but it helped me run my later assignments on AWS."
   }
 ]
