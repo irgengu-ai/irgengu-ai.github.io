@@ -1,0 +1,13 @@
+---
+title: "Contact"
+---
+
+# Contact
+
+Thanks for visiting my website! I'm always happy to connect with people who are interested in business analytics, operations, or similar work.
+
+**Email:** [gnq0918@bu.edu](mailto:gnq0918@bu.edu)
+
+**GitHub:** [irgengu-ai](https://github.com/irgengu-ai)
+
+**LinkedIn:** [Naqiao Gu](https://www.linkedin.com/in/naqiao-gu)

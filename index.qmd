@@ -1,40 +1,36 @@
 ---
-title: "Naqiao's Cloud Lab"
-jupyter: python3
+title: "Home"
 ---
 
-# Hi, I'm Naqiao
+::: {.intro}
+# Hi, I'm Naqiao.
 
-I'm a Business Analytics student at Boston University.
+I'm studying Applied Business Analytics at Boston University. I like working with data, but I'm more interested in how people use it to solve business problems.
 
-This site is for my AD688 course work. I'm using it to keep track of what I actually set up and test during the semester, including AWS EC2, Python, PySpark, Quarto, and GitHub.
+I made this website for my AD688 class. It is a place to share what I've learned about AWS, Spark, SQL, and a few projects from this semester.
 
-I'm still getting used to the technical side of cloud analytics, so this site is basically a record of me building things step by step and making sure they actually work.
+[My projects](projects.qmd){.btn .btn-primary}  [Download my CV](Naqiao_Gu_CV.pdf){.btn .btn-outline-primary}
+:::
 
-## My First Spark Test
+## What you'll find here
 
-I set up PySpark on my AWS EC2 instance and used this small example to make sure the environment was working correctly.
+::: {.grid-2}
+::: {.info-card}
+### Projects
 
-```{python}
-from pyspark.sql import SparkSession
+Some class projects I've worked on, including job data analysis and salary prediction.
 
-spark = (
-    SparkSession.builder
-    .master("local[2]")
-    .appName("Naqiao AD688")
-    .getOrCreate()
-)
+[See my work](projects.qmd)
+:::
+::: {.info-card}
+### About me
 
-tools = [
-    ("Python", "3.12"),
-    ("PySpark", "4.0.4"),
-    ("Quarto", "1.10")
-]
+A little about my background, the tools I'm learning, and what I want to do after graduation.
 
-df = spark.createDataFrame(tools, ["Tool", "Version"])
-df.show()
+[Read more](about.qmd)
+:::
+:::
 
-spark.stop()
-```
+## A quick note
 
-It is a simple test, but it confirms that Python and Spark can run correctly on my EC2 environment.
+I'm still learning the technical side of cloud analytics. A lot of this class was about trying things, running into problems, and figuring out how to fix them. I wanted the website to show that process without making it sound more complicated than it was.

@@ -1,15 +1,30 @@
 project:
   type: website
+  output-dir: _site
+  resources:
+    - Naqiao_Gu_CV.pdf
+    - assets/model-results.png
 
 website:
   title: "Naqiao Gu"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: about.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Contact
+        href: contact.qmd
+  page-footer:
+    center: "Naqiao Gu | Boston University | AD688"
 
 format:
   html:
-    toc: true
+    theme: cosmo
+    css: styles.css
+    toc: false
+    link-external-newwindow: true

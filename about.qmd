@@ -1,13 +1,19 @@
 ---
-title: "About"
+title: "About Me"
 ---
 
 # About Me
 
-I'm Naqiao Gu, a graduate student in Applied Business Analytics at Boston University.
+Hi, I'm Naqiao Gu. I'm a graduate student in Applied Business Analytics at Boston University, and I expect to finish my degree in January 2027.
 
-My background is more business-focused than programming-focused, so one of my goals in AD688 is to understand how cloud tools and big data systems are actually used in business analytics.
+My background is in business. I've worked with inventory, orders, and reporting, so I like projects that connect data to everyday operations. I enjoy understanding what's going on and finding a practical way to improve it.
 
-For this course, I'm working with AWS EC2, Python, PySpark, GitHub, and Quarto. I prefer learning by setting things up myself, testing them, and fixing problems when something does not work.
+## What I'm learning
 
-Outside class, I'm especially interested in business analysis, operations, and data-driven decision making.
+In AD688, I have been using Python, SQL, PySpark, AWS EC2, and GitHub. Some of these tools were new to me when I started. I learn best by actually using them instead of only reading about them.
+
+## What interests me
+
+I'm interested in business operations, logistics, and business intelligence. I like working with people and using data to support better decisions. Outside class, I enjoy basketball and collecting model toys.
+
+[See my projects](projects.qmd)

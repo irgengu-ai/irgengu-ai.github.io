@@ -1,0 +1,13 @@
+---
+title: "CV"
+---
+
+# My CV
+
+I'm finishing my master's degree in Applied Business Analytics at Boston University. I'm interested in entry-level roles in operations, business analysis, and business intelligence.
+
+My previous experience includes work with reporting, inventory, and team coordination. I've also used Excel, SQL, Python, Power BI, and PySpark in work or class projects.
+
+[**Download my CV (PDF)**](Naqiao_Gu_CV.pdf){.btn .btn-primary}
+
+I left my phone number off this public version. Feel free to contact me by email instead.
